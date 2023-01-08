@@ -5,20 +5,26 @@
     font-family: sans-serif;
 }
 
-.navbar{
+nav {
     display: flex;
-    justify-content:space-around;
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    color: black;
     align-items: center;
-    /*background-color: beige;*/
-    padding:15px 0;
-    width:90%;
-    margin: 0 auto;
-
-}
-
-.nav-links a{
+    justify-content: space-between;
+    padding: 0 25px 0 50px;
+    text-align: start;
+  }
+  nav .logo {
+    color: #000;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  
+  .nav-links a{
     /*list-style-type:none;*/
-    display: inline-block;
+    
     margin-right:0.5rem;
     text-decoration: none;
     color: #39364e;
@@ -29,46 +35,136 @@
     opacity: 0.5;
     transition: opacity 0.5s;
     
-}
-.nav-links li{
-    list-style-type: none;
-}
-
-
-.nav-links{
+  }
+  
+  .nav-links{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
-  
+  }
   .nav-links a:hover {
     opacity: 1;
   }
-
-  .nav-links li a.active {
-    color: #777af2;
+  
+  .nav-links .abtn {
+    opacity: 1;
+    color: #fff;
+    background-color:#777af2 ;
+    font-size: 16px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+  }
+  
+  nav ul li i{
+    margin-right:1.5rem;
+  }
+  
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a{
+    margin:0 8px;
+  }
+  
+  nav .menu-btn i {
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nav .fa {
+    color: #000;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  @media (max-width: 1000px) {
+    nav {
+      padding: 0 40px 0 50px;
+    }
+  }
+  @media (max-width: 990px) {
+    nav .menu-btn i {
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before {
+      content: "\f00d";
+    }
+    nav ul {
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background: #fff;
+      height: 50vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ ul {
+      left: 0;
+    }
+    nav ul li {
+      width: 100%;
+      margin: 0px 0;
+      color: #000;
+    }
+    nav ul li a {
+      width: 100%;
+      margin-left: -100%;
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  
+    nav ul li .abtn {
+      margin: 0 auto;
+      width: 250px;
+      padding: 25px;
+    }
+    #click:checked ~ ul li a {
+      margin-left: 0px;
+    }
   }
 
- 
-
-.apply-btn{
-    outline:none;
-    background-color:#777af2;
-    height:45px;
-    width:151.281px;
-    color: white;
-    padding:10px 34px 10px 34px;
-    border: 0;
-    border-radius: 5px;
-}
-
-.apply-btn p{
+  .hbtn{
+    color: #fff;
+    background-color:#777af2 ;
     font-size: 16px;
-}
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 0;
+  }
 
-.i{
-  padding: 5px 10px;  
-}
+  .fbtn{
+    color: #fff;
+    background-color:#777af2 ;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 0;
+  }
+  
+  
 
 /* Hero Banner Section*/
 
@@ -82,7 +178,7 @@
 .hero-banner{
     padding-top: 1px;
     margin-top:25px;
-    width:1280px;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
     height:80vh;
@@ -214,7 +310,6 @@
 .v-title p{
     font-size: 21px;
 }
-
 
 
 .v-image img:hover{
@@ -881,8 +976,24 @@ html,body{
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) and (max-width: 991.98px) {
 
-  
 
+    html,body{
+        width:100%;
+    }
+  
+    .hero-banner{
+        padding-top: 1px;
+        margin-top:25px;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        height:80vh;
+        border-radius: 7px;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.20)),url(/images/profguy.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
 .hope-box{
     width:85%;
     padding:6.5rem;
@@ -1020,7 +1131,6 @@ html,body{
     font-size: 18px;
     color: white;
 }
-
 
 .hero-banner{
     height:90vh;
