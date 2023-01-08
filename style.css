@@ -497,6 +497,10 @@ a{
 
 /* Navbar Section */
 
+html,body{
+    width:100%;
+    overflow-x:hidden;
+}
 
 .navbar{
     display: flex;
@@ -591,10 +595,7 @@ a{
     margin-left: auto;
     margin-right: auto;
     height:80vh;
-    border-radius: 7px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.20)),url(/images/profguy.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  
     
 }
 
