@@ -100,7 +100,7 @@ nav {
       padding: 0 40px 0 50px;
     }
   }
-  @media (max-width: 990px) {
+  @media (max-width: 1200px) {
     nav .menu-btn i {
       display: block;
     }
@@ -117,6 +117,7 @@ nav {
       text-align: center;
       display: block;
       transition: all 0.3s ease;
+      z-index: 1000;
     }
     #click:checked ~ ul {
       left: 0;
@@ -585,8 +586,75 @@ a{
   }
 
 
-/* Media Queries for Mobile responsive
+/* Media Queries for Mobile responsive*/
+@media (min-width:320px) and (max-width:480px){
+    /*.hero-text{
+        margin-top: 4rem;
+    }
+    
+    .hero-text h1{
+        font-size: 20px; 
+    }
+    
+    .hero-text h4{
+        font-size: 18px; 
+        font-weight: 100;
+    }
+    .about-box{
+        width:auto;
+        font-size: 15px;
+    }
+    
+    .about-box h1{
+        font-size: 20px;
+        color: #39364e;   
+    }
+    
+    
+    .india-box{
+        padding-top: 1px;
+        margin-top: 2rem;
+        position: relative;
+        left: 4.7rem;
+    }
+    
+    
+    .india-box h1{
+        font-size: 20px;
+        text-align: left;
+    }
+    
+    .c-box{
+    
+        font-size: 18px;
+        font-weight:400;
+    }
+    
+    
+    .acab-image img{
+        
+        width: 390px;
+    }
+    
+    .acab-desc h1{
+        font-size: 17px;
+        font-weight: 600;
+    }
+    
+    .acab-desc p{
+        font-size: 16x;
+    }*/
+    
+    .hope-section{
+        height: 50vh;
+        margin-top:9rem;
+    }
+    .hope-box{
+        width:90%;
+        padding:4.5rem;
+    }
 
+}
 /*Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
@@ -626,34 +694,6 @@ html,body{
     transition: opacity 0.5s;    
 }
 
-
-
-/*@media (max-width: 920px) {
-
-    .navlinks{
-        display: inline;
-        margin:0 2px;
-    }
-
-    .navbar .menu-btn i{
-      display: block;
-    }
-
-       /*#click:checked ~ .menu-btn i:before{
-      content: "\f00d";
-    }
-    .nav-links li{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background: #111;
-        height: 100vh;
-        width: 100%;
-        text-align: center;
-        display: block;
-        transition: all 0.3s ease;
-      }
-}*/
  
 
 .apply-btn{
@@ -737,7 +777,7 @@ html,body{
 }
 
 .about-box h1{
-    font-size: 25px;
+    font-size: 20px;
     color: #39364e;   
 }
 
@@ -745,10 +785,13 @@ html,body{
 .india-box{
     padding-top: 1px;
     margin-top: 2rem;
+    position: relative;
+    left: 4.7rem;
 }
 
+
 .india-box h1{
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
 }
 
@@ -785,8 +828,11 @@ html,body{
 }
 
 .v-title h1{
-    font-size: 30px;
-    
+    font-size: 21px;  
+}
+
+.v-title p{
+    font-size: 17px;  
 }
 
 
@@ -807,7 +853,11 @@ html,body{
 }
 
 .m-title h1{
-    font-size: 30px;
+    font-size: 21px;
+}
+
+.m-title {
+    font-size: 17px;
 }
 
 .career-section{
@@ -892,8 +942,8 @@ html,body{
 
 .hope-desc h1{
     text-align: center;
-    font-size: 24px;
-    font-weight: 550;
+    font-size: 18px;
+    font-weight: 200;
 }
 
 .footer-section{
@@ -937,8 +987,9 @@ html,body{
 .bottom-footer h4{
     padding-top:1rem;
 }
-
 }
+
+
 
 
 
@@ -979,6 +1030,7 @@ html,body{
 
     html,body{
         width:100%;
+
     }
   
     .hero-banner{
@@ -1135,17 +1187,170 @@ html,body{
 .hero-banner{
     height:90vh;
 }
+ 
+}
+
+@media (min-width: 576px) and (max-width:767px){
+    html,body{
+    width:100%;
+    overflow-x:hidden;
+}
 
 
 
+.navbar .logo h1 {
+    font-size: 14px;
+}
+
+.nav-links a{
+    /*list-style-type:none;*/
+    display: inline-block;
+    margin-right:4px;
+    text-decoration: none;
+    color: #39364e;
+    text-transform: lowercase;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    transition: opacity 0.5s;    
+}
 
 
 
+/*@media (max-width: 920px) {
+
+    .navlinks{
+        display: inline;
+        margin:0 2px;
+    }
+
+    .navbar .menu-btn i{
+      display: block;
+    }
+
+       /*#click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    .nav-links li{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+      }
+}*/
+ 
+
+.apply-btn{
+    outline:none;
+    background-color:#777af2;
+    height:45px;
+    color:white;
+    padding:6px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.apply-btn p{
+    font-size: 14.5px;
+}
+
+.i{
+  padding: 5px 10px;  
+}
 
 
+/* Hero Banner Section*/
+.hero-section{
+    /*background-color:brown;*/
+    height:100vh;
+    width:auto;
+    padding:1px;
+}
 
-
-
-
+.hero-banner{
+    padding-top: 1px;
+    margin-top:25px;
+    width:auto; /*575.98px*/
+    margin-left: auto;
+    margin-right: auto;
+    height:80vh;
   
+    
+}
+
+.hero-text{
+    margin-top: 8rem;
+}
+
+.hero-text h1{
+    font-size: 33px; 
+}
+
+.hero-text h4{
+    font-size: 18px; 
+    font-weight: 100;
+}
+    
+
+
+/* FeaTURE sECTION*/
+
+.feature-section{
+    /*background-color:brown;*/
+    height:180vh;
+    width:100%;
+    padding:1px;
+
+}
+
+.feature-container{
+    padding-top: 1px;
+    margin: 0 auto;
+    /*width:1280px;*/
+    /*background-color: azure;*/
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.about-box{
+    width:70%;
+    font-size: 15px;
+}
+
+.about-box h1{
+    font-size: 25px;
+    color: #39364e;   
+}
+
+
+.india-box{
+    width:70%;
+    position: relative;
+    left: 4.7rem;
+}
+
+.india-box h1{
+    font-size: 25px;
+    text-align: left;
+}
+
+.c-box{
+    width:420px;
+}
+
+
+.hope-desc h1{
+    font-size: 19.5px;
+    font-weight: 200;
+}
+
+
 }
