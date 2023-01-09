@@ -588,7 +588,7 @@ a{
 
 /* Media Queries for Mobile responsive*/
 @media (min-width:320px) and (max-width:480px){
-    /*.hero-text{
+    .hero-text{
         margin-top: 4rem;
     }
     
@@ -609,14 +609,36 @@ a{
         font-size: 20px;
         color: #39364e;   
     }
+    .feature-container{
+        padding-top: 1px;
+        margin: 0 auto;
+        position: relative;
+        right: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        j
+    
+    }
+    
+    .about-box p{
+        font-size:21px;
+    }
+    
+    .about-box h1{
+        font-size: 25px;
+        color: #39364e;   
+    }
     
     
     .india-box{
-        padding-top: 1px;
         margin-top: 2rem;
+        width:80%;
         position: relative;
-        left: 4.7rem;
+        left:2rem;
     }
+    
+    
+ 
     
     
     .india-box h1{
@@ -1025,11 +1047,12 @@ html,body{
   
 
   /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
 
 
     html,body{
         width:100%;
+        overflow-x: hidden;
 
     }
   
@@ -1312,17 +1335,20 @@ html,body{
 .feature-container{
     padding-top: 1px;
     margin: 0 auto;
+    width: 100%;
+    position: relative;
+    right: 1.5rem;
     /*width:1280px;*/
     /*background-color: azure;*/
     display: flex;
     flex-direction: column;
-    
+    j
 
 }
 
 .about-box{
     width:70%;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .about-box h1{
@@ -1332,9 +1358,10 @@ html,body{
 
 
 .india-box{
-    width:70%;
+    margin-top: 2rem;
+    width:80%;
     position: relative;
-    left: 4.7rem;
+    left:5rem;
 }
 
 .india-box h1{
@@ -1346,6 +1373,55 @@ html,body{
     width:420px;
 }
 
+.v-box{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    /*width:100%;*/
+    margin: 0 auto;
+    margin-bottom:4rem;
+
+}
+
+.v-title{
+    width: auto;
+    text-align: center;
+    margin-top:1rem;
+    
+}
+
+.v-title h1{
+    font-size: 21px;  
+}
+
+.v-title p{
+    font-size: 17px;  
+}
+
+
+.m-box{
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    /*width:100%;*/
+    margin: 0 auto;
+    
+}
+
+
+.m-title{
+    width: auto;
+    text-align: center;
+    margin-top:1rem;
+}
+
+.m-title h1{
+    font-size: 21px;
+}
+
+.m-title {
+    font-size: 17px;
+}
 
 .hope-desc h1{
     font-size: 19.5px;
